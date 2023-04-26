@@ -4,7 +4,9 @@
   "description": "Repo for tabnews replica course.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export"
   },
   "author": "",
   "license": "MIT",
