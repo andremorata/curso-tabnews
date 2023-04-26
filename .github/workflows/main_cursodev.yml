@@ -34,10 +34,10 @@ jobs:
           name: node-app
           path: ./out/
 
-       - name: 'Deploy to Azure Web App'
-         id: deploy-to-webapp
-         uses: azure/webapps-deploy@v2
-         with:
-           app-name: 'cursodev'
-           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45AA8C657F2247A38AC4BF26696CAC92 }}
-           package: ./out/
+      - name: 'Deploy to Azure Web App'
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'cursodev'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45AA8C657F2247A38AC4BF26696CAC92 }}
+          package: ./out/
